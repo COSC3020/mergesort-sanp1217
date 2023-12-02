@@ -15,3 +15,5 @@ part of the array each recursive call considers.
 Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
+
+The $\Theta$ bound worst-case runtime complexity of my implementation is $\Theta$(nlogn). This is because the outer loop runs for log(n) passes since the loop increments `passes` by continually multiplying `passes` by two each loop. The inner loop merges the subarrays which consists of comparing and copying each element in the subarray which takes n time. 
